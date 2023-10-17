@@ -9,7 +9,7 @@ function MainAppView() {
 
     return (
         <div id="MainAppView_holder" className="MainAppView_holder">
-            {true && (
+            {step === 8  && (
                 <div className="flex justify-center py-2">
                     <div className="w-10/12">
                         <Tabs defaultSelectedKey="wallet" size="md" fullWidth={true}>
