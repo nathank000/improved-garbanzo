@@ -3,9 +3,9 @@ function LeftColumn({ text }) {
         <div
             className="flex flex-column p-4 bg-[#212529]"
             style={{
-                width: 300,
-                height: 400,
-                backgroundImage: 'url(' + './assets/headerBG.jpg' + ')',
+                width: '100%',
+                height: '100%',
+                backgroundImage: `url('./assets/future_waves.jpg')`
             }}
         >
             <p className="flex flex-col flex-shrink-0 text-white text-[16px] font-normal leading-6">{text}</p>

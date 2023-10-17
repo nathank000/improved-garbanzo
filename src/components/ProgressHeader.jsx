@@ -22,11 +22,13 @@ const ProgressHeader = () => {
 
             {appData.steps.map((value, index) => {
                 index += 1;
-                let itemClass = 'flex justify-center items-center p-2 highlight rounded-md bg-[#6C757D] whitespace-no-wrap-text';
+                // let itemClass = 'flex justify-center items-center p-2 highlight rounded-md bg-[#6C757D] whitespace-no-wrap-text';
+                let itemClass = 'flex justify-center items-center p-2 highlight rounded-md bg-gradient-to-tr from-blue-500 to-purple-500 text-white shadow-lg';
                 let stepText = 'Step ' + index;
 
                 if (index == step) {
-                    itemClass = 'flex justify-center items-center p-2 highlight flex-grow rounded-md bg-[#212529] whitespace-no-wrap-text';
+                    itemClass = 'flex justify-center items-center p-2 highlight flex-grow bg-gradient-to-tr from-blue-500 to-purple-500 text-white shadow-lg ';
+                    // itemClass = 'flex justify-center items-center p-2 highlight flex-grow rounded-md bg-[#212529] whitespace-no-wrap-text';
                     stepText += ' - ' + value.title;
                 }
                 return (

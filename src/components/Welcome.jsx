@@ -16,7 +16,8 @@ const Welcome = () => {
                 <p className="text-[16px] font-normal leading-6">Experience Loaded</p>
                 <br />
                 <button
-                    className="bg-[#0d6efd] hover:bg-[#0b5ed7] text-[16px] leading-6 text-white font-normal py-[7px] px-3 rounded"
+                    className="bg-gradient-to-tr from-blue-500 to-purple-500 text-white shadow-lg font-normal py-[7px] px-3 rounded"
+                    //className="bg-[#0d6efd] hover:bg-[#0b5ed7] text-[16px] leading-6 text-white font-normal py-[7px] px-3 rounded"
                     onClick={() => setStep(1)}
                 >{`Let's Go!`}</button>
             </div>
