@@ -20,10 +20,18 @@ function Step4() {
                 <>
                     <div>
                         <ProgressHeader />
+        
+                        {/* hidden on larger screens  */}
+                        <div className="md:hidden">
+                            this is on the smaller sdreen and hopefully goes across
+                        </div>
+                    
                         <div className="flex flex-nowrap">
-                            <div>
-                                <LeftColumn text={appData.steps[3].left_explainer_data} />
-                            </div>
+
+                        {/* hidden on small screens */}
+                        <div className="hidden md:block">
+                            <LeftColumn text={appData.steps[3].left_explainer_data} />
+                        </div>
 
                             <div className="p-[1rem] bg-[#F8F9FA] flex flex-col flex-shrink-0 flex-1 whitespace-no-wrap-text">
                                 <h1 className="text-[40px] font-medium leading-[48px]">This is Step {step}</h1>

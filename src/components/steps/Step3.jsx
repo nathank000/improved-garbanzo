@@ -19,11 +19,19 @@ function Step3() {
         <div>
             {step === 3 && (
                 <div>
-                    <ProgressHeader />
-                    <div className="flex flex-nowrap">
-                        <div>
+                     <ProgressHeader />
+                        {/* hidden on larger screens  */}
+                        <div className="md:hidden">
+                            this is on the smaller sdreen and hopefully goes across
+                        </div>
+                    
+                        <div className="flex flex-nowrap">
+
+                        {/* hidden on small screens */}
+                        <div className="hidden md:block">
                             <LeftColumn text={appData.steps[2].left_explainer_data} />
                         </div>
+
 
                         <div className="p-[1rem] bg-[#F8F9FA] flex flex-col flex-shrink-0 flex-1 whitespace-no-wrap-text">
                             <h1 className="text-[40px] font-medium leading-[48px] mb-[.5rem]">This is Step {step}</h1>
