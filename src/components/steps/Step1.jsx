@@ -9,13 +9,12 @@ const Step1 = () => {
     return (
         <div>
             <ProgressHeader />
-            <div className="flex flex-nowrap">
-                
                 {/* hidden on larger screens  */}
                 <div className="md:hidden">
                     this is on the smaller sdreen and hopefully goes across
                 </div>
-
+            
+            <div className="flex flex-nowrap">
 
                 {/* hidden on small screens */}
                 <div className="hidden md:block">
