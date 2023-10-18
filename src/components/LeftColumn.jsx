@@ -8,7 +8,7 @@ function LeftColumn({ text }) {
                 backgroundImage: `url('./assets/future_waves.jpg')`
             }}
         >
-            <p className="flex flex-col flex-shrink-0 text-white text-[16px] font-normal leading-6">{text}</p>
+            <p style={{color: "#ffffff"}}>{text}</p>
         </div>
     );
 }
