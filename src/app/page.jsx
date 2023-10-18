@@ -7,6 +7,7 @@ import Step4 from '@/components/steps/Step4';
 import Step5 from '@/components/steps/Step5';
 import Step6 from '@/components/steps/Step6';
 import Step7 from '@/components/steps/Step7';
+import MainAppView from '@/components/steps/MainAppView.jsx';
 import { createContext, useEffect, useState } from 'react';
 import Data from '../../data/app_info';
 import Script from 'next/script';
@@ -42,6 +43,8 @@ export default function Home() {
                 return <Step6 />;
             case 7:
                 return <Step7 />;
+            case 8:
+                return <MainAppView />;
             default:
                 return <Welcome />;
         }
