@@ -31,7 +31,7 @@ export default function Home() {
     };
 
     fetchData();
-  }, []);
+  }, [appData]);
 
   const renderStep = (stepNumber) => {
     switch (stepNumber) {
