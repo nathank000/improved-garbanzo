@@ -10,9 +10,15 @@ const Step1 = () => {
         <div>
             <ProgressHeader />
             <div className="flex flex-nowrap">
-                hidden here
-                <div className="md:hidden">
+                
+                {/* hidden on small screens */}
+                <div className="hidden md:block">
                     <LeftColumn text={appData.steps[0].left_explainer_data} />
+                </div>
+
+                {/* hidden on larger screens  */}
+                <div className="md:hidden">
+                    this is visible on small screens
                 </div>
 
                 <div className="p-[1rem] bg-[#F8F9FA] flex flex-col flex-shrink-0 flex-1 whitespace-no-wrap-text">
