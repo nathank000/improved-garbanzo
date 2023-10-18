@@ -10,7 +10,7 @@ const Step1 = () => {
         <div>
             <ProgressHeader />
             <div className="flex flex-nowrap">
-                <div>
+                <div className="md:hidden">
                     <LeftColumn text={appData.steps[0].left_explainer_data} />
                 </div>
 
