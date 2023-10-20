@@ -10,7 +10,13 @@ const Step1 = () => {
         <div>
             <ProgressHeader />
                 {/* hidden on larger screens  */}
-                <div className="md:hidden">
+                <div className="md:hidden"
+                style={{
+                    width: '100%',
+                    height: '120px',
+                    backgroundImage: `url('./assets/future_waves.jpg')`
+                }}
+                >
                     this is on the smaller sdreen and hopefully goes across
                 </div>
             
