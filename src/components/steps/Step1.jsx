@@ -17,7 +17,7 @@ const Step1 = () => {
                     backgroundImage: `url('./assets/future_waves.jpg')`
                 }}
                 >
-                    this is on the smaller sdreen and hopefully goes across
+                    {appData.steps[0].left_explainer_data}
                 </div>
             
             <div className="flex flex-nowrap">
